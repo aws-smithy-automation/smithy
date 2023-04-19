@@ -115,8 +115,7 @@ jobs:
         with:
           path: homebrew-tap
           delete-branch: true
-          draft: true
-          push-to-fork: aws-smithy-automation/homebrew-tap
+          push-to-fork: smithy-automation/homebrew-tap
           title: ${{ steps.vars.outputs.pr_title }}
           body: ${{ steps.vars.outputs.pr_body }}
           branch: "upgrade-smithy-cli-${{ steps.vars.outputs.version }}"
